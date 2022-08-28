@@ -118,10 +118,6 @@ li{
   }
 }
 
-.foto:nth-child(1) {
-  
-}
-
 .foto:nth-child(2) {
     animation-delay: 5s;
 }
@@ -172,10 +168,6 @@ main {
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
-  
-    /** Sintaxe alternativa **/
-    /* grid-column: 1 / span 2;  */
-    /* grid-row: 1 / span 2; */
   }
   
   .gallery__item--2 {
@@ -183,10 +175,6 @@ main {
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 3;
-  
-    /** Sintaxe alternativa **/
-    /* grid-column: 3 / span 2;  */
-    /* grid-row: 1 / span 2; */
   }
   
   .gallery__item--3 {
@@ -194,10 +182,6 @@ main {
     grid-column-end: 9;
     grid-row-start: 1;
     grid-row-end: 6;
-  
-    /** Sintaxe alternativa **/
-    /* grid-column: 5 / span 4;
-    grid-row: 1 / span 5; */
   }
   
   .gallery__item--4 {
@@ -205,10 +189,6 @@ main {
     grid-column-end: 5;
     grid-row-start: 3;
     grid-row-end: 6;
-  
-    /** Sintaxe alternativa **/
-    /* grid-column: 1 / span 4;  */
-    /* grid-row: 3 / span 3; */
   }
   
   .gallery__item--5 {
@@ -216,10 +196,6 @@ main {
     grid-column-end: 5;
     grid-row-start: 6;
     grid-row-end: 10;
-  
-    /** Sintaxe alternativa **/
-    /* grid-column: 1 / span 4; */
-    /* grid-row: 6 / span 3; */
   }
   
   .gallery__item--6 {
@@ -227,16 +203,18 @@ main {
     grid-column-end: 9;
     grid-row-start: 6;
     grid-row-end: 10;
-  
-    /** Sintaxe alternativa **/
-    /* grid-column: 5 / span 4; */
-    /* grid-row: 6 / span 3; */
   }
 
   .text-two {
     margin-top: 10px;
     font-size: 1.1rem;
     text-align: center;
+  }
+
+  .text-three {
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 10px;
   }
   
   .select-course {
@@ -288,17 +266,6 @@ main {
     cursor: pointer;
   }
 
-  /* .bk {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-  }
-
-  .break {
-    border-bottom: 1px solid red;
-    width: 89vw;
-  } */
-
   footer {
     margin-top: 20px;
     height: 170px;
@@ -346,9 +313,27 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   gap: 50px 85px ;
-  margin: 0 100px 0 100px;
+  margin: 30px 100px 0 100px;
 }
 
+.depoimento {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    max-width: 250px;
+    min-height: 265px;
+    background-color: #003078;
+    border-radius: 20px;
+}
+
+.depoimento:hover {
+    background-color: #e30000;
+    transition: all ease 300ms;
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
 .depoimento {
     display: flex;
     justify-content: center;

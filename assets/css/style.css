@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: #f7f7f7;
+}
+
+header {
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px; 
+    border-bottom: 3px solid red;
+    background: #fff;
+    color: #000;
+    height: 60px;
+}
+
+#logo-header {
+    width: 150px;
+    margin-top: 5px;
+}
+
+header > div > ul {
+    font-weight: 600;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+li{
+    padding: 7px 7px;
+    cursor: pointer;
+    border: 3px solid transparent;
+}
+
+#cadaster {
+    height: 38px;
+    background: #e30000;
+    border-radius: 15px;
+    font-weight: bold;
+    color: #fff;
+}
+
+#cadaster:hover {
+    border: 3px solid #003078;
+    transition: all ease 300ms;
+    background-color: #003078;
+}
+
+#matricula {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* Border-Bottom Animation */
+.link {
+    text-decoration: none;
+    color: #000;
+    height: 3px;
+}
+
+.link:hover {
+    color: #003078;
+}
+
+.link::after {
+    content: "";
+    background-color: #003078;
+    width: 0;
+    height: 3px;
+    display: block;
+}
+
+.link:hover::after {
+    width: 100%;
+    transition: width 0.3s linear;
+    color: #003078;
+}
+
+.container-galeria {
+    width: 100%;
+    height: 590px;
+}
+
+.galeria {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.foto {
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    animation-name: animacao;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animacao {
+  25% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+.foto:nth-child(1) {
+  
+}
+
+.foto:nth-child(2) {
+    animation-delay: 5s;
+}
+
+.foto:nth-child(3) {
+  animation-delay: 10s;
+}
+
+main {
+    margin-top: 30px;
+    padding: 0 60px;
+}
+
+.subtitle {
+    font-size: 40px;
+    text-align: center;
+    color: #003078;
+    text-shadow: 2px 2px 2px #C4C4C4;
+}
+
+.text-one {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.container {
+    width: 90%;
+    margin: 2rem auto; 
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 0.5rem; 
+  }
+  
+  .gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover ;
+    display: block; 
+  }
+  
+  .gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  
+    /** Sintaxe alternativa **/
+    /* grid-column: 1 / span 2;  */
+    /* grid-row: 1 / span 2; */
+  }
+  
+  .gallery__item--2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  
+    /** Sintaxe alternativa **/
+    /* grid-column: 3 / span 2;  */
+    /* grid-row: 1 / span 2; */
+  }
+  
+  .gallery__item--3 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 6;
+  
+    /** Sintaxe alternativa **/
+    /* grid-column: 5 / span 4;
+    grid-row: 1 / span 5; */
+  }
+  
+  .gallery__item--4 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 6;
+  
+    /** Sintaxe alternativa **/
+    /* grid-column: 1 / span 4;  */
+    /* grid-row: 3 / span 3; */
+  }
+  
+  .gallery__item--5 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 10;
+  
+    /** Sintaxe alternativa **/
+    /* grid-column: 1 / span 4; */
+    /* grid-row: 6 / span 3; */
+  }
+  
+  .gallery__item--6 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 6;
+    grid-row-end: 10;
+  
+    /** Sintaxe alternativa **/
+    /* grid-column: 5 / span 4; */
+    /* grid-row: 6 / span 3; */
+  }
+
+  .text-two {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  
+  .select-course {
+    margin: 0 50px;
+  }
+
+  .courses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px 85px;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .size-img {
+    width: 250px;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+
+  .size-img:hover {
+    box-shadow: #e30000 0px 0px 0px 3px;
+    transition: all ease 300ms;
+    transform: scale(1.05);
+  }
+
+  .btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  .btn-button {
+    background-color: #e30000;
+    border: none;
+    width: 67.4vw;
+    padding: 10px 0;
+    border-radius: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    font-size: 20px;
+  }
+
+  .btn-button:hover {
+    background-color: #003078;
+    transition: all ease 300ms;
+    cursor: pointer;
+  }
+
+  /* .bk {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .break {
+    border-bottom: 1px solid red;
+    width: 89vw;
+  } */
+
+  footer {
+    margin-top: 20px;
+    height: 170px;
+    background-color: #000;
+  }
+
+  .socials {
+    display: flex;
+    justify-content: center;
+  }
+
+  .socials-icon {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    gap: 25px;
+  }
+
+  svg:hover {
+    cursor: pointer;
+    transition: all ease 300ms;
+    transform: scale(1.06);
+  }
+
+  .text-footer {
+    margin-top: 10px;
+    color: #fff;
+    text-align: center;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+}
+
+.depoimentos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px 85px ;
+  margin: 0 100px 0 100px;
+}
+
+.depoimento {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    max-width: 250px;
+    min-height: 265px;
+    background-color: #003078;
+    border-radius: 20px;
+}
+
+.avatar {
+    align-self: center;
+    margin: 10px auto;
+    width: 80px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.name {
+    text-align: center;
+    font-size: 20px;
+}
+
+.curso {
+    text-align: center;
+    font-size: 10px;
+}
+
+.comentario {
+    margin: 10px;
+    text-align: justify;
+    font-weight: 200;
+}
+  
+
+  
+

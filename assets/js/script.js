@@ -9,7 +9,7 @@ let container = document.querySelector(".container-body");
 let lista = document.createElement("ul");
 lista.classList.add("lista-menu");
 let item1 = document.createElement("a");
-item1.setAttribute("href", "/index.html");
+item1.setAttribute("href", "../../index.html");
 let item2 = document.createElement("a");
 item2.setAttribute("href", "./assets/img/loading.gif");
 let item3 = document.createElement("a");

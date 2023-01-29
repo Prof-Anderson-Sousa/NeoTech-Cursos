@@ -1,0 +1,63 @@
+main {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.card-unidade {
+    margin-top: 20px;
+    padding-top: 25px;
+    width: 450px;
+    height: 405px;
+    border: 1px solid #e8e8e8;
+    border-radius: 10px
+}
+
+.card-unidade:hover {
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+-   webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.title-loc {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.sub-loc {
+    margin-bottom: 15px;
+    font-size: 12px;
+    color: #888;
+    font-weight: 500;
+}
+
+.call, .route {
+    border-radius: 5px;
+    margin: 10px 8px;
+    width: 40%;
+    height: 45px;
+    border: none;
+}
+
+.call {
+    background-color: #e30000;
+}
+
+.route {
+    background-color: #003078;
+}
+
+.info {
+    width: 85%;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 30px;
+}

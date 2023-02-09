@@ -11,7 +11,7 @@ lista.classList.add("lista-menu");
 let item1 = document.createElement("a");
 item1.setAttribute("href", "../../index.html");
 let item2 = document.createElement("a");
-item2.setAttribute("href", "./assets/img/loading.gif");
+item2.setAttribute("href", "./assets/pages/quemSomos.html");
 let item3 = document.createElement("a");
 item3.setAttribute("href", "./assets/img/loading.gif");
 let item4 = document.createElement("a");

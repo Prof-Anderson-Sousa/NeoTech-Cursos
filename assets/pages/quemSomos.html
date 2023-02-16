@@ -47,6 +47,21 @@
 
     <h1 class="subtitle  subtitle-course">Quem Somos</h1>
     <hr>
+    <section id="resultados">
+        <div class="cardResult">
+            <i style="color: #fff" class="fa-solid fa-6x fa-school"></i>
+            <div id="random">"</div>
+        </div>
+        <div class="cardResult">
+            <i style="color: #fff" class="fa-solid fa-6x fa-graduation-cap"></i>
+            <div id="random1">"</div>
+        </div>
+        <div class="cardResult">
+            <i style="color: #fff" class="fa-solid fa-6x fa-briefcase"></i>
+            <div id="random2">"</div>
+        </div>
+    </section>
+    
     <main style="margin-top: 10px;">
         <div class="align">
             <p class="text-one"><strong>NeoTech</strong> – Empresa de Formação Educacional e Profissional, com um Crescimento de 100% em Fidelidade e Profissionalismo.
@@ -74,6 +89,39 @@
         <p class="text-footer">NeoTech Cursos - A escolha de quem é apaixonado pelo sucesso 🚀🚀🚀</p>
         <p class="text-footer">&copy; Copyright All rights reserved</p>
       </footer>
+      <script>
+        let count = 0;
+        let count1 = 0;
+        let count2 = 0;
+        const random = document.querySelector("#random");
+        const random1 = document.querySelector("#random1");
+        const random2 = document.querySelector("#random2");
+
+        const intervalId = setInterval(() => {
+            count++;
+            random.innerText = Math.floor(Math.random() * 15087);
+            if (count === 20) {
+                clearInterval(intervalId);
+                random.innerText = "+ " + 15+"."+"087" + " Matriculas Totais"
+            }
+        }, 150);
+        const intervalId1 = setInterval(() => {
+            count1++;
+            random1.innerText = Math.floor(Math.random() * 15000);
+            if (count1 === 20) {
+                clearInterval(intervalId1);
+                random1.innerText = "+ " + 7+"."+"208" + " Alunos Formados"
+            }
+        }, 180);
+        const intervalId2 = setInterval(() => {
+            count2++;
+            random2.innerText = Math.floor(Math.random() * 15000);
+            if (count2 === 20) {
+                clearInterval(intervalId2);
+                random2.innerText = "+ " + 1+"."+"843" + " Alunos Contratados"
+            }
+        }, 205);
+    </script>
       <script src="../js/scriptUnidades.js"></script>
 </body>
 </html>

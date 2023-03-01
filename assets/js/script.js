@@ -17,7 +17,7 @@ item3.setAttribute("href", "./assets/img/loading.gif");
 let item4 = document.createElement("a");
 item4.setAttribute("href", "./assets/pages/unidades.html");
 let item5 = document.createElement("a");
-item5.setAttribute("href", "./assets/img/loading.gif");
+item5.setAttribute("href", "./assets/pages/contatos.html");
 let item6 = document.createElement("a");
 item6.setAttribute("href", "./assets/img/loading.gif");
 

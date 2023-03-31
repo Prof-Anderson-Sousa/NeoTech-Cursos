@@ -451,9 +451,11 @@ hr {
 }
 
 .cardResult:hover {
-  background-color: #e30000;
+    background-color: #e30000;
     transition: all ease 300ms;
     transform: scale(1.05);
     cursor: pointer;
     box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
 }
+
+

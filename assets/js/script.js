@@ -13,13 +13,13 @@ item1.setAttribute("href", "../../index.html");
 let item2 = document.createElement("a");
 item2.setAttribute("href", "./assets/pages/quemSomos.html");
 let item3 = document.createElement("a");
-item3.setAttribute("href", "./assets/img/loading.gif");
+item3.setAttribute("href", "./assets/pages/cursos.html");
 let item4 = document.createElement("a");
 item4.setAttribute("href", "./assets/pages/unidades.html");
 let item5 = document.createElement("a");
 item5.setAttribute("href", "./assets/pages/contatos.html");
 let item6 = document.createElement("a");
-item6.setAttribute("href", "./assets/img/loading.gif");
+item6.setAttribute("href", "https://api.whatsapp.com/send/?phone=5581996276609&text=Ol%C3%A1%2C+Desejo+me+Matricular%21&type=phone_number&app_absent=0");
 
 /* Selecionando Imagem do X */
 let containerLogo = document.createElement("figure");

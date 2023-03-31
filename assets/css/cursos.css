@@ -1,0 +1,49 @@
+main{
+    padding: 0 90px !important;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+.cursos-div {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 60px;
+  }
+  
+  .cursos-div .text-div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px 0px;
+  }
+  
+  .cursos-div .text-div p {
+    font-size: 16px;
+    text-align: justify;
+  }
+  
+  .cursos-div .text-div .button-div {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .cursos-div .text-div .button-div button{
+    padding: 10px 30px;
+    border-radius: 15px;
+    font-family: 'Montserrat', sans-serif;
+    background: #003078;
+    border: none;
+    color: #fff;
+  }
+  .cursos-div .text-div .button-div button:hover{
+    background: #e30000;
+    transition: all ease 300ms;
+  }
+  
+  .cursos-div .img-div img {
+    width: 350px;
+    height: 230px;
+    border-radius: 0px 40px 40px 40px;
+  }
+

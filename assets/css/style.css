@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body{
@@ -61,6 +62,7 @@ li{
 #matricula {
     color: #fff;
     text-decoration: none;
+    font-size: 14px !important;
 }
 
 
@@ -68,7 +70,7 @@ li{
 .link {
     text-decoration: none;
     color: #000;
-    font-size: 14px;
+    font-size: 14px !important;
     height: 3px;
 }
 
@@ -305,13 +307,6 @@ main {
     color: #fff;
     text-align: center;
   }
-
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
-}
 
 .profile {
     display: flex;

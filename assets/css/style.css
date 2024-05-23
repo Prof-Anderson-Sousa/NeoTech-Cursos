@@ -38,6 +38,10 @@ ul {
     gap: 15px;
 }
 
+li .link {
+    font-size: 14px;
+}
+
 li{
     padding: 7px 7px;
     cursor: pointer;
@@ -47,7 +51,6 @@ li{
 #cadaster {
     height: 38px;
     background: #e30000;
-    font-size: 14px;
     border-radius: 15px;
     font-weight: bold;
     color: #fff;
@@ -59,10 +62,10 @@ li{
     background-color: #003078;
 }
 
-li > #matricula {
+#matricula {
+    font-size: 14px;
     color: #fff;
     text-decoration: none;
-    font-size: 14px !important;
 }
 
 
@@ -70,7 +73,6 @@ li > #matricula {
 li > .link {
     text-decoration: none;
     color: #000;
-    font-size: 14px !important;
     height: 3px;
 }
 

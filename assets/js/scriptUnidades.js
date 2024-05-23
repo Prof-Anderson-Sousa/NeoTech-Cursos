@@ -25,7 +25,7 @@ item6.setAttribute("href", "https://api.whatsapp.com/send/?phone=5581996276609&t
 let containerLogo = document.createElement("figure");
 let imgLogo = document.createElement("img");
 imgLogo.classList.add("logo-neo");
-imgLogo.setAttribute("src", "../img/LOGO NEOTECH PNG.png");
+imgLogo.setAttribute("src", "../img/LOGO-NEOTECH-PNG.webp");
 containerLogo.appendChild(imgLogo);
 
 /* Selecionando Botão de Fechar Menu */4

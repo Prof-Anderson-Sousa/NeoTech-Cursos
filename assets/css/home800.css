@@ -16,7 +16,6 @@
 
   main {
     padding: 0 15px;
-    margin-top: 345px;
   }
 
   .subtitle {
@@ -156,10 +155,6 @@
 }
 
 @media (min-width: 1024px) and (max-width: 1200px) {
-  .cursos-div .text-div .button-div button{
-    /* display: none; */
-  }
-
   .cursos-div .text-div p {
     font-size: 12.8px !important;
     text-align: justify;

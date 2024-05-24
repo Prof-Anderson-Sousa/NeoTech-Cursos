@@ -94,54 +94,8 @@ li > .link {
     color: #003078;
 }
 
-.container-galeria {
-    width: 100%;
-    height: 590px;
-}
-
-.galeria {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.foto {
-    width: 100%;
-    position: absolute;
-    opacity: 0;
-    animation-name: animacao;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes animacao {
-  25% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-}
-
-.foto:nth-child(2) {
-    animation-delay: 5s;
-}
-
-.foto:nth-child(3) {
-  animation-delay: 10s;
-}
-
-.foto:nth-child(4) {
-  animation-delay: 15s;
-}
-
-.foto:nth-child(5) {
-  animation-delay: 20s;
-}
-
 main {
-    margin-top: 30px;
+    margin-top: 20px;
     padding: 0 60px;
 }
 

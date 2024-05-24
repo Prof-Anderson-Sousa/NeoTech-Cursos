@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./assets/css/home320.css">
     <link rel="stylesheet" href="./assets/css/menu_responsive.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/slide.css">
     <title>NEOTECH | INÍCIO</title>
     <meta name="google-site-verification" content="WyqUCoRa0QvUQP3JjOsSEgSlGs-e7ZagQ9STA5gBFVE" />
 </head>
@@ -34,14 +35,23 @@
         </div>
         <img class="menu-burguer" src="./assets/img/menu-icon.svg" alt="">
     </header>
-    <div class="container-galeria">
-        <section class="galeria">
-                <img class="img-top foto" src="./assets/img/juazeiro.webp" alt="Alunos de Informática na Aula">
-                <img class="img-top foto" src="./assets/img/informatica-ca.webp" alt="Alunos de Informática na Aula">
-                <img class="img-top foto" src="./assets/img/cs-ingles.webp" alt="Alunos de Inglês">
-                <img class="img-top foto" src="./assets/img/GESTAO-EMPRESARIAL.webp" alt="Alunos de Gestão Empresarial">
-                <img class="img-top foto" src="./assets/img/web-design-1.webp" alt="Alunos de Web Designer">
-        </section>
+    <div class="slider">
+        <div class="slides">
+            <img class="slide 1" src="./assets/img/juazeiro.webp" alt="Alunos de Informática na Aula">
+            <img class="slide 2" src="./assets/img/informatica-ca.webp" alt="Alunos de Informática na Aula">
+            <img class="slide 3" src="./assets/img/cs-ingles.webp" alt="Alunos de Inglês">
+            <img class="slide 4" src="./assets/img/GESTAO-EMPRESARIAL.webp" alt="Alunos de Gestão Empresarial">
+            <img class="slide 5" src="./assets/img/web-design-1.webp" alt="Alunos de Web Designer">
+        </div>
+
+        <div class="progress-bar-container">
+            <div class="progress-bar"></div>
+        </div>
+
+        <div class="navigation">
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
     </div>
 
     <main>
@@ -177,6 +187,7 @@
     </footer>
     </div>
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/slide.js"></script>
     
 </body>
 </html>

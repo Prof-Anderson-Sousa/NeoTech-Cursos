@@ -32,7 +32,7 @@ function autoSlide() {
 
 function resetInterval() {
     clearInterval(slideInterval);
-    slideInterval = setInterval(autoSlide, 3000);
+    slideInterval = setInterval(autoSlide, 5000);
     resetProgressBar();
 }
 
@@ -40,7 +40,7 @@ function resetProgressBar() {
     progressBar.style.transition = 'none';
     progressBar.style.transform = 'scaleX(0)';
     setTimeout(() => {
-        progressBar.style.transition = 'transform 3s linear';
+        progressBar.style.transition = 'transform 5s linear';
         progressBar.style.transform = 'scaleX(1)';
     }, 50); // Pequeno delay para permitir o reset da transição
 }
@@ -49,4 +49,4 @@ function resetProgressBar() {
 showSlide(currentSlide);
 
 // Define o intervalo de tempo para troca automática (por exemplo, 3 segundos)
-slideInterval = setInterval(autoSlide, 3000);
+slideInterval = setInterval(autoSlide, 5000);

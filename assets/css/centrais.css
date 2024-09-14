@@ -12,40 +12,37 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: rgb(227,0,0);
-    background: linear-gradient(90deg, rgba(227,0,0,1) 32%, rgba(0,48,120,1) 100%);
-    background-size:  200% 200%;
-    animation: float 3s linear infinite alternate;
-}
-
-@keyframes float {
-    from{background-position: 0 0 ;}
-    to{background-position: 100% 100%;}
+    background-image: url(../img/estudantes.jpg);
+    background-size:     cover;
 }
 
 section {
+    margin-bottom: 100px;
     padding: 45px;
-    background-color: white;
-    width: 500px;
-    height: 480px;
+    background: rgba(255, 255, 255, 0.15); /* Fundo semi-transparente */
+    backdrop-filter: blur(10px); /* Efeito de desfoque */
+    -webkit-backdrop-filter: blur(10px); /* Compatibilidade para navegadores WebKit */
     border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Borda sutil para definir o contorno */
+    width: 500px;
+    height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 20px;
     text-align: center;
-    margin-bottom: 50px;
-    box-shadow: 2px 15px 20px rgba(61, 61, 61,.4);
-
+    margin-bottom: 0px;
+    box-shadow: 2px 15px 20px rgba(61, 61, 61, .4);
 }
+
 
 header img {
     width: 150px;
 }
 
 header h3 {
-    color: #63a0e6;
+    color: #e30000;
     font-size: 1.2rem;
 }
 
@@ -73,7 +70,7 @@ main a:hover {
 
 .footer {
     position: fixed;
-    bottom: 0;
+    bottom: -30px;
     color: white;
     font-size: 1rem;
 }
@@ -81,7 +78,7 @@ main a:hover {
 @media (max-width: 520px) {
     section {
         width: 90%;
-        height: 500px;
+        height: 600px;
         padding: 30px;
     }
 

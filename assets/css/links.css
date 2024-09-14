@@ -12,22 +12,19 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: rgb(227,0,0);
-    background: linear-gradient(90deg, rgba(227,0,0,1) 32%, rgba(0,48,120,1) 100%);
-    background-size:  200% 200%;
-    animation: float 3s linear infinite alternate;
-}
-
-@keyframes float {
-    from{background-position: 0 0 ;}
-    to{background-position: 100% 100%;}
+    background-image: url(../img/estudantes.jpg);
+    background-size:     cover;
 }
 
 section {
+    background: rgba(255, 255, 255, 0.15); /* Fundo semi-transparente */
+    backdrop-filter: blur(10px); /* Efeito de desfoque */
+    -webkit-backdrop-filter: blur(10px); /* Compatibilidade para navegadores WebKit */
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Borda sutil para definir o contorno */
     padding: 45px;
-    background-color: white;
     width: 500px;
-    height: 400px;
+    height: 470px;
     border-radius: 15px;
     display: flex;
     align-items: center;
@@ -45,7 +42,7 @@ header img {
 }
 
 header h3 {
-    color: #63a0e6;
+    color: #e30000;
     font-size: 1.2rem;
 }
 

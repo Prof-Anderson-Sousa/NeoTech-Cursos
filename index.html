@@ -62,7 +62,7 @@
 </style>
 </head>
 <body class="natal">
-    <audio autoplay loop> <!--agora com autoplay e sem controls-->
+    <audio id="audio" loop> <!--agora com autoplay e sem controls-->
         <source src="assets/music/natal.mp3" type="audio/mp3">
     </audio>
 
@@ -271,6 +271,20 @@
     <script src="./assets/js/slide.js"></script>
     <script>
         AOS.init();
-      </script>
+
+    // Seleciona o elemento de áudio
+    const audio = document.getElementById("audio");
+
+    // Adiciona um evento para tocar o áudio ao tocar na tela
+    document.body.addEventListener("touchstart", () => {
+      audio.play()
+        .then(() => {
+          console.log("Áudio iniciado com sucesso!");
+        })
+        .catch((error) => {
+          console.error("Erro ao iniciar o áudio:", error);
+        });
+    }, { once: true }); // O áudio será iniciado apenas na primeira interação
+    </script>
 </body>
 </html>

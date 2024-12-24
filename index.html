@@ -69,7 +69,7 @@
     <div id="form-container" class="form-overlay">
         <div class="form-box">
             <img src="./assets/img/bolsa.jpg" alt="Ganhe uma bolsa de estudo" class="form-image">
-            <form method="post" action="https://script.google.com/macros/s/AKfycbz2bnnkZxv5qr5I4DC2DavJ1M9a8fuj3m55h4z7-YQpDqNIzr7wa5ggljTgW5V0gH3I/exec" name="contact-form" id="scholarship-form">
+            <form method="post" action="https://script.google.com/macros/s/AKfycbzNYhtYUDpdhl_6Y_1nYOui3S6AK-KnZu5aiueKiwfOm9xl_-QBRE7sjpJQtO6fRlBO/exec" name="contact-form" id="scholarship-form">
                 <div class="form-group">
                     <input type="text" name="your-name" id="nome" placeholder="Nome Completo" required>
                 </div>
@@ -77,8 +77,18 @@
                     <input type="text" name="your-number" id="whatsapp" placeholder="Seu Whatsapp" required>
                 </div>
                 <div class="form-group">
-                    <input type="text" name="your-course" id="curso" placeholder="Exemplo: Inglês" required>
-                </div>
+                    <select id="curso" name="your-course" placeholder="Exemplo: Informática" required>
+                        <option value="" disabled selected>Selecione um curso...</option>
+                        <optgroup label="CURSOS PROFISSIONAIS">
+                            <option value="informatica">Informática Profissional</option>
+                            <option value="manutencao-micro">Manutenção de Micro</option>
+                            <option value="web-design">Web Design</option>
+                            <option value="ingles-profissional">Inglês Profissional</option>
+                            <option value="gestao-empresarial">Gestão Empresarial</option>
+                            <option value="aprendiz-bancario">Aprendiz Bancário</option>
+                        </optgroup>
+                    </select>
+                </div>                
                 <div class="form-actions">
                     <button type="button" id="fechar-btn" class="btn-fechar">Fechar</button>
                     <input type="submit" value="Enviar" id="submit" class="btn-enviar">

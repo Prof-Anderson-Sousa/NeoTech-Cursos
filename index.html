@@ -18,54 +18,8 @@
     <link rel="stylesheet" href="./assets/css/form.css">
     <title>NEOTECH | INÍCIO</title>
     <meta name="google-site-verification" content="WyqUCoRa0QvUQP3JjOsSEgSlGs-e7ZagQ9STA5gBFVE" />
-    <style>
-    .natal{
-        width: 100%;
-        margin: 0 auto;
-        }
-        .logo{
-        text-align: center;
-        }
-        .logo a{
-            color:#fff;
-        }
-        body{
-            z-index: 9999;
-            background-color: rgb(228, 215, 215);
-            background-image: url('assets/img/s1.png'), url('assets/img/s2.png'), url('assets/img/s3.png');
-            height: 100%;
-            -webkit-animation: snow 10s linear infinite;
-            -moz-animation: snow 10s linear infinite;
-            -ms-animation: snow 10s linear infinite;
-            animation: snow 10s linear infinite;
-        }
-        @keyframes snow {
-        0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-        50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
-        100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
-        }
-        @-moz-keyframes snow {
-        0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-        50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
-        100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
-        }
-        @-webkit-keyframes snow {
-        0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-        50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
-        100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
-        }
-        @-ms-keyframes snow {
-        0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-        50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
-        100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
-        }
-</style>
 </head>
-<body class="natal">
-    <audio id="audio" loop> <!--agora com autoplay e sem controls-->
-        <source src="assets/music/natal.mp3" type="audio/mp3">
-    </audio>
-
+<body>
     <div id="form-container" class="form-overlay">
         <div class="form-box">
             <img src="./assets/img/bolsa.jpg" alt="Ganhe uma bolsa de estudo" class="form-image">
@@ -271,20 +225,6 @@
     <script src="./assets/js/slide.js"></script>
     <script>
         AOS.init();
-
-    // Seleciona o elemento de áudio
-    const audio = document.getElementById("audio");
-
-    // Adiciona um evento para tocar o áudio ao tocar na tela
-    document.body.addEventListener("touchstart", () => {
-      audio.play()
-        .then(() => {
-          console.log("Áudio iniciado com sucesso!");
-        })
-        .catch((error) => {
-          console.error("Erro ao iniciar o áudio:", error);
-        });
-    }, { once: true }); // O áudio será iniciado apenas na primeira interação
     </script>
 </body>
 </html>

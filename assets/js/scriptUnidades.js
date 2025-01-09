@@ -3,8 +3,6 @@ let menu = document.querySelector(".menu-burguer");
 let body = document.querySelector("body");
 let container = document.querySelector(".container-body");
 
-
-
 /* Criando Lista */
 let lista = document.createElement("ul");
 lista.classList.add("lista-menu");

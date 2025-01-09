@@ -19,7 +19,9 @@ item4.setAttribute("href", "./assets/pages/unidades.html");
 let item5 = document.createElement("a");
 item5.setAttribute("href", "./assets/pages/contatos.html");
 let item6 = document.createElement("a");
-item6.setAttribute("href", "https://api.whatsapp.com/send/?phone=5581996276609&text=Ol%C3%A1%2C+Desejo+me+Matricular%21&type=phone_number&app_absent=0");
+item6.setAttribute("href", "https://api.whatsapp.com/send?phone=5581996276609&text=Tenho%20interesse%20em%20fazer%20parte%20da%20equipe.%20Gostaria%20de%20saber%20mais%20sobre%20as%20vagas%20disponíveis%20e%20o%20processo%20seletivo.");
+let item7 = document.createElement("a");
+item7.setAttribute("href", "https://api.whatsapp.com/send/?phone=5581996276609&text=Ol%C3%A1%2C+Desejo+me+Matricular%21&type=phone_number&app_absent=0");
 
 /* Selecionando Imagem do X */
 let containerLogo = document.createElement("figure");
@@ -42,7 +44,8 @@ item2.innerHTML = "QUEM SOMOS";
 item3.innerHTML = "CURSOS";
 item4.innerHTML = "UNIDADES";
 item5.innerHTML = "CONTATOS";
-item6.innerHTML = "MATRICULE-SE";
+item6.innerHTML = "TRABALHE CONOSCO";
+item7.innerHTML = "MATRICULE-SE";
 
 /* Itens Sendo Adicionado a Lista */
 lista.appendChild(buttonClose);
@@ -53,6 +56,7 @@ lista.appendChild(item3);
 lista.appendChild(item4);
 lista.appendChild(item5);
 lista.appendChild(item6);
+lista.appendChild(item7);
 
 /* Criando Função Adicionar Menu */
 menu.addEventListener('click', adicionarMenu);

@@ -24,7 +24,7 @@ section {
     border: 1px solid rgba(255, 255, 255, 0.3); /* Borda sutil para definir o contorno */
     padding: 45px;
     width: 500px;
-    height: 470px;
+    height: 530px;
     border-radius: 15px;
     display: flex;
     align-items: center;
@@ -42,7 +42,7 @@ header img {
 }
 
 header h3 {
-    color: #e30000;
+    color: #fff;
     font-size: 1.2rem;
 }
 

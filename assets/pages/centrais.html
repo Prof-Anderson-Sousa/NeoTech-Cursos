@@ -1,30 +1,107 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+AU+SA:wght@100..400&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../css/centrais.css">
-    <title>NEOTECH - UNIDADES</title>
+    <title>NEOTECH - LINKS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #003078, #0056a1);
+            font-family: "Montserrat", serif;
+            font-optical-sizing: auto;
+            /* font-weight: <weight>; */
+            font-style: normal;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+          margin-top: 100px;
+            max-width: 400px;
+            margin: auto;
+            background-image: url('../img/BACKGROUND_new.png');
+            background-size: contain;
+            /* background-position: center; */
+            background-repeat: no-repeat;
+            border-radius: 10px;
+            padding: 20px;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            
+        }
+        .logo {
+            width: 100px;
+            height: 100px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url(../img/LOGO.jpg);
+            border-radius: 100%;
+            margin: auto;
+            margin-top: 86px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .subtitle {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .button {
+        display: flex; /* Usa flexbox para alinhar os itens */
+        align-items: center; /* Alinha verticalmente os itens no centro */
+        justify-content: space-between; /* Alinha o texto à esquerda */
+        background-color: #0056b3; /* Cor de fundo do botão */
+        color: white; /* Cor do texto */
+        padding: 15px 15px; /* Espaçamento interno do botão */
+        margin: 20px 0; /* Espaçamento entre os botões */
+        text-decoration: none; /* Remove o sublinhado do link */
+        border-radius: 5px; /* Bordas arredondadas */
+        box-shadow: rgba(0, 0, 0, 0.75) 0.3rem 0.4rem 0px; /* Sombra do botão */
+        position: relative; /* Para controle de posição */
+        text-align: center;
+    }
+        .button:hover {
+            background: #003d7a;
+        }
+        .icon {
+        width: 20px; /* Largura do ícone */
+        height: 20px; /* Altura do ícone */
+    }
+
+    @media (max-width: 944px) {
+        .container {
+            margin-top: 0;
+            padding-bottom: 400px;
+            border-radius: 0;
+        }
+    }
+    </style>
 </head>
 <body>
-    <section>
-        <header>
-            <img src="../img/LOGO-NEOTECH-PNG.webp" alt="logo">
-            <h3>@neotechcursos.oficial</h3>
-        </header>
-        <main>
-            <a href="https://api.whatsapp.com/send?phone=558137883053">Casa Amarela-PE</a>
-            <a href="https://api.whatsapp.com/send?phone=558137719560">Prazeres-PE</a>
-            <a href="https://api.whatsapp.com/send?phone=558321461550">Patos-PB</a>
-            <a href="https://api.whatsapp.com/send?phone=558321782447">Santa Rita-PB</a>
-            <a href="https://api.whatsapp.com/send?phone=558421440268">Caicó-RN</a>
-            <a href="https://api.whatsapp.com/send?phone=558821561385">Juazeiro-CE</a>
-            <a href="https://api.whatsapp.com/send?phone=558199598319">Serra Talhada-PE</a>
-            <a href="https://api.whatsapp.com/send?phone=558199598319">Petrolina-PE</a>
-        </main>
-    </section>
-    <p class="footer">Copyright 2024 - DEV MMS</p>
+    <div class="container">
+        <div class="logo"></div>
+        <div class="title">NEOTECH CURSOS</div>
+        <div class="subtitle">EDUCAÇÃO E QUALIFICAÇÃO PROFISSIONAL</div>
+
+        <a href="https://api.whatsapp.com/send?phone=558137883053" class="button"><img src="../img/whatsapp-brands-solid.svg" class="icon">Casa Amarela-PE<img src="./img/earth-americas-solid.svg" class="icon" style="opacity: 0;"></a>
+        <a href="https://api.whatsapp.com/send?phone=558137719560" class="button"><img src="../img/whatsapp-brands-solid.svg" class="icon">Prazeres-PE<img src="./img/earth-americas-solid.svg" class="icon" style="opacity: 0;"></a>
+        <a href="https://api.whatsapp.com/send?phone=558321461550" class="button"><img src="../img/whatsapp-brands-solid.svg" class="icon">Patos-PB<img src="./img/location-dot-solid" class="icon" style="opacity: 0;"></a>
+        <a href="https://api.whatsapp.com/send?phone=558321782447" class="button"><img src="../img/whatsapp-brands-solid.svg" class="icon">Santa Rita-PB<img src="./img/earth-americas-solid.svg" class="icon" style="opacity: 0;"></a>
+        <a href="https://api.whatsapp.com/send?phone=558421440268" class="button"><img src="../img/whatsapp-brands-solid.svg" class="icon">Caicó-RN<img src="./img/earth-americas-solid.svg" class="icon" style="opacity: 0;"></a>
+        <a href="https://api.whatsapp.com/send?phone=558821561385" class="button"><img src="../img/whatsapp-brands-solid.svg" class="icon">Juazeiro-CE<img src="earth-americas-solid.svg" class="icon" style="opacity: 0;"></a>
+        <a href="https://api.whatsapp.com/send?phone=558199598319" class="button"><img src="../img/whatsapp-brands-solid.svg" class="icon">Serra Talhada-PE<img src="earth-americas-solid.svg" class="icon" style="opacity: 0;"></a>
+        <a href="https://api.whatsapp.com/send?phone=558199598319" class="button"><img src="../img/whatsapp-brands-solid.svg" class="icon">Petrolina-PE<img src="earth-americas-solid.svg" class="icon" style="opacity: 0;"></a>
+    </div>
+
+    <p class="text-footer">&copy; Copyright All rights reserved - by HK Sistemas</p>
 </body>
 </html>

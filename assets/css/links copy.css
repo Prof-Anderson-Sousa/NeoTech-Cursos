@@ -1,0 +1,79 @@
+/* Estilização geral */
+body {
+    margin: 0;
+    font-family: Inter, sans-serif;
+    background: linear-gradient(180deg, #4B6CB7 0%, #182848 100%);
+    color: white;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.background-blur {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    backdrop-filter: blur(83px);
+}
+
+.content {
+    position: relative;
+    width: 680px;
+    margin: 40px auto;
+    background: linear-gradient(180deg, #4B6CB7 0%, #182848 100%);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.header {
+    background: black;
+    padding: 20px;
+}
+
+.header-img {
+    width: 100%;
+    height: auto;
+}
+
+.profile-img {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    margin-top: -48px;
+}
+
+.menu {
+    padding: 20px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0);
+    border: 1px solid #6682C2;
+    border-radius: 32px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 3px 4px 0px rgba(0, 0, 0, 0.75);
+}
+
+.menu-item img {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.menu-item h3 {
+    font-size: 15px;
+    margin: 0;
+}
+
+.menu-item p {
+    font-size: 13px;
+    margin: 0;
+}
